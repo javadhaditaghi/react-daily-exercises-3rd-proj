@@ -1,0 +1,33 @@
+[
+    {
+        "id":"1",
+        "title": "Rerum aperiam",
+        "description":"Autem saepe animi et aut aspernatur culpa facere. Rerum saepe ",
+        "icon":"bi bi-briefcase"
+    },
+    {"id":"2",
+        "title": "Veniam omnis",
+        "description":"Omnis perferendis molestias culpa sed. Recusandae quas possimus",
+        "icon":"bi bi-card-checklist"
+    },
+    {"id":"3",
+        "title": "Delares sapiente",
+        "description":"Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi ",
+        "icon":"bi bi-bar-chart"
+    },
+    {"id":"4",
+        "title": "Eius provident",
+        "description":"Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis ",
+        "icon":"bi bi-binoculars"
+    }, 
+    {"id":"5",
+        "title": "Rerum aperiam",
+        "description":"Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum ",
+        "icon":"bi bi-brightness-high"
+    },
+    {"id":"6",
+        "title": "Veniam omnis",
+        "description":"Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti",
+        "icon":"bi bi-calendar4-week"
+    }
+]
