@@ -1,63 +1,48 @@
 
 import "./About-us.css"
+import jsonData from "./About-us.json"
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const AboutUs = () => {
     return (
         <section id="about" className="about" >
 
-            <div className="container" data-aos="fade-up" data-aos-delay="100">
-                <div className="row align-items-xl-center gy-5">
+            <Container data-aos="fade-up" data-aos-delay="100">
+                <Row className="align-items-xl-center gy-5">
 
-                    <div className="col-xl-5 content">
+                    <Col xl={5} className="content">
                         <h3>About Us</h3>
                         <h2>Ducimus rerum libero reprehenderit cumque</h2>
                         <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus
                             et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora
                             deleniti soluta.</p>
                         <a href="#" className="read-more"><span>Read More</span><i className="bi bi-arrow-right"></i></a>
-                    </div>
+                    </Col>
 
-                    <div className="col-xl-7">
-                        <div className="row gy-4 icon-boxes">
+                    <Col xl={7}>
+                        <Row className="gy-4 icon-boxes">
+                            {
+                                jsonData.map(infoCard => (
+                                    <Col md={6} data-aos="fade-up" data-aos-delay="200">
+                                        <div className="icon-box">
+                                            <i className={infoCard.icon}></i>
+                                            <h3>{infoCard.title}</h3>
+                                            <p>{infoCard.description}</p>
+                                        </div>
+                                    </Col>
+                                ))}
 
-                            <div className="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                                <div className="icon-box">
-                                    <i className="bi bi-buildings"></i>
-                                    <h3>Eius provident</h3>
-                                    <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
-                                </div>
-                            </div>
 
-                            <div className="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                                <div className="icon-box">
-                                    <i className="bi bi-clipboard-pulse"></i>
-                                    <h3>Rerum aperiam</h3>
-                                    <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
-                                </div>
-                            </div>
 
-                            <div className="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                                <div className="icon-box">
-                                    <i className="bi bi-command"></i>
-                                    <h3>Veniam omnis</h3>
-                                    <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
-                                </div>
-                            </div>
 
-                            <div className="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                                <div className="icon-box">
-                                    <i className="bi bi-graph-up-arrow"></i>
-                                    <h3>Delares sapiente</h3>
-                                    <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda
-                                    </p>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
 
-                </div>
-            </div>
+                        </Row>
+                    </Col>
+
+                </Row>
+            </Container>
 
         </section >
     )
