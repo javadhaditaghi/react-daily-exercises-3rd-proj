@@ -33,11 +33,6 @@ const AboutUs = () => {
                                     </Col>
                                 ))}
 
-
-
-
-
-
                         </Row>
                     </Col>
 
