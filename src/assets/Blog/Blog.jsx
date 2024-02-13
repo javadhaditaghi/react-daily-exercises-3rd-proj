@@ -16,7 +16,7 @@ const Blog = () => {
                         <Row class="gy-4">
 
                             {jsonData5.map(blog => (
-                                <Col xl={4} lg={6} key={blog.id}>
+                                <Col xl={4} lg={6} key={blog.id} className="mb-4">
                                     <article>
 
                                         <div class="post-img">
