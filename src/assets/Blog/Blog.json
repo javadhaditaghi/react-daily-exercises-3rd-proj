@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "imageSrc": "../../../public/blog/blog-1.jpg",
+      "category": "Politics",
+      "title": "Dolorum optio tempore voluptas dignissimos",
+      "author": "Maria Doe",
+      "authorImg": "../../../public/blog/blog-author.jpg",
+      "date": "Jan 1, 2022"
+    },
+    {
+      "id": 2,
+      "imageSrc": "../../../public/blog/blog-2.jpg",
+      "category": "Sports",
+      "title": "Nisi magni odit consequatur autem nulla dolorem",
+      "author": "Allisa Mayer",
+      "authorImg": "../../../public/blog/blog-author-2.jpg",
+      "date": "Jun 5, 2022"
+    },
+    {
+      "id": 3,
+      "imageSrc": "../../../public/blog/blog-3.jpg",
+      "category": "Entertainment",
+      "title": "Possimus soluta ut id suscipit ea ut in quo quia et soluta",
+      "author": "Mark Dower",
+      "authorImg": "../../../public/blog/blog-author-3.jpg",
+      "date": "Jun 22, 2022"
+    },
+    {
+      "id": 4,
+      "imageSrc": "../../../public/blog/blog-4.jpg",
+      "category": "Sports",
+      "title": "Non rem rerum nam cum quo minus olor distincti",
+      "author": "Lisa Neymar",
+      "authorImg": "../../../public/blog/blog-author-4.jpg",
+      "date": "Jun 30, 2022"
+    },
+    {
+      "id": 5,
+      "imageSrc": "../../../public/blog/blog-5.jpg",
+      "category": "Politics",
+      "title": "Accusamus quaerat aliquam qui debitis facilis consequatur",
+      "author": "Denis Peterson",
+      "authorImg": "../../../public/blog/blog-author-5.jpg",
+      "date": "Jan 30, 2022"
+    },
+    {
+      "id": 6,
+      "imageSrc": "../../../public/blog/blog-6.jpg",
+      "category": "Entertainment",
+      "title": "Distinctio provident quibusdam numquam aperiam aut",
+      "author": "Mika Lendon",
+      "authorImg": "../../../public/blog/blog-author-6.jpg",
+      "date": "Feb 14, 2022"
+    }
+  ]
+  
