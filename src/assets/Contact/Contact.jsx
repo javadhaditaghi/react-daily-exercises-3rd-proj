@@ -62,7 +62,7 @@ const Contact = () => {
 
                     </Col>
 
-                    <Col lg={6}>
+                    <Col lg={6} className="mt-3 mt-md-0">
                         <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
                             data-aos-delay="200">
                             <Row class="gy-4">
