@@ -1,22 +1,23 @@
 import "./Team.css";
 import jsonData from "./Team.json"
+import { Col, Row, Container, } from "react-bootstrap";
 
 const Team = () => {
     return (
         <section id="team" className="team">
 
 
-            <div className="container section-title" data-aos="fade-up">
+            <Container className="section-title" data-aos="fade-up">
                 <h2>Team</h2>
                 <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            </div>
+            </Container>
 
-            <div className="container">
+            <Container>
 
-                <div className="row gy-5">
+                <Row className="gy-5">
 
                     {jsonData.map(member => (
-                        <div className="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
+                        <Col lg={4} md={6} className="member" data-aos="fade-up" data-aos-delay="100" key={member.id}>
                             <div className="member-img">
                                 <img src={member.imageSrc} className="img-fluid" alt="" />
                                 <div className="social">
@@ -31,22 +32,10 @@ const Team = () => {
                                 <span>{member.position}</span>
                                 <p>{member.description}</p>
                             </div>
-                        </div>
-
+                        </Col>
                     ))}
-
-
-
-
-
-
-
-
-
-
-                </div>
-
-            </div>
+                </Row>
+            </Container>
 
         </section>
     )
