@@ -7,28 +7,28 @@ import Services from './assets/Services/Services';
 import Team from './assets/Team/Team';
 import Blog from './assets/Blog/Blog';
 
+
 function App() {
 
 
+
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Header />}>
-            <Route index element={<Hero />} />
-            <Route path='about' element={<AboutUs />} />
-            <Route path='services' element={<Services />} />
-            <Route path='team' element={<Team />} />
-            <Route path='blog' element={<Blog />} />
+
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Header />}>
+          <Route index element={<Hero />} />
+          <Route path='about' element={<AboutUs />} />
+          <Route path='services' element={<Services />} />
+          <Route path='team' element={<Team />} />
+          <Route path='blog' element={<Blog />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
 
 
-          </Route>
-        </Routes>
-      </BrowserRouter>
 
 
-
-    </>
   )
 }
 

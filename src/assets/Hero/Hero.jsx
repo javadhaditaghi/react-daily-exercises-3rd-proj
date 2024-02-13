@@ -1,10 +1,16 @@
 import "./Hero.css"
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 
 
 const Hero = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
 
     return (
         <section id="hero" className="hero">
