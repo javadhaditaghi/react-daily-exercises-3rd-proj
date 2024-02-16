@@ -18,7 +18,7 @@ const SingleBlog = () => {
 
 
     return (
-        <section id="blog" className="blog">
+        <section id="blog" className="blog mt-5">
 
             <Container data-aos="fade-up" data-aos-delay="100">
 
