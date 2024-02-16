@@ -10,6 +10,7 @@ import Contact from './assets/Contact/Contact';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import SingleBlog from './assets/Blog/SingleBlog';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path='team' element={<Team />} />
           <Route path='blog' element={<Blog />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='Blog/:BlogId' element={<SingleBlog />} />
 
         </Route>
       </Routes>
