@@ -1,6 +1,7 @@
 import "./Team.css";
 import jsonData from "./Team.json"
 import { Col, Row, Container, } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Team = () => {
     return (
@@ -28,7 +29,7 @@ const Team = () => {
                                 </div>
                             </div>
                             <div className="member-info text-center">
-                                <h4>{member.name}</h4>
+                                <Link to={`/Team/${member.id}`} className="h5" >{member.name}</Link>
                                 <span>{member.position}</span>
                                 <p>{member.description}</p>
                             </div>

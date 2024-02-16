@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import SingleBlog from './assets/Blog/SingleBlog';
 import SingleService from './assets/Services/SingleService';
+import TeamMember from './assets/Team/TeamMember';
 
 
 function App() {
@@ -32,8 +33,11 @@ function App() {
           <Route path='services/:ServiceId' element={<SingleService />} />
 
           <Route path='team' element={<Team />} />
+          <Route path='team/:TeamId' element={<TeamMember />} />
+
           <Route path='blog' element={<Blog />} />
           <Route path='Blog/:BlogId' element={<SingleBlog />} />
+
           <Route path='contact' element={<Contact />} />
 
         </Route>
