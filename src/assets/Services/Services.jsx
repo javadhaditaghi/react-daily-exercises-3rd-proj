@@ -4,6 +4,7 @@ import jsonData1 from "./Services.json"
 import Aos from "aos";
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
 
 const Services = () => {
     useEffect(() => {
@@ -22,7 +23,7 @@ const Services = () => {
                             <div className="service-item d-flex">
                                 <div className="icon flex-shrink-0"><i className={service.icon}></i></div>
                                 <div>
-                                    <h4 className="title"><a href="services-details.html" className="stretched-link">{service.title}</a></h4>
+                                    <h4 className="title"><Link to={`/Services/${service.id}`} className="stretched-link">{service.title}</Link></h4>
                                     <p className="description">{service.description}</p>
                                 </div>
                             </div>

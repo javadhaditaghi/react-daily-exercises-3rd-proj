@@ -11,6 +11,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import SingleBlog from './assets/Blog/SingleBlog';
+import SingleService from './assets/Services/SingleService';
 
 
 function App() {
@@ -28,10 +29,12 @@ function App() {
           <Route index element={<Hero />} />
           <Route path='about' element={<AboutUs />} />
           <Route path='services' element={<Services />} />
+          <Route path='services/:ServiceId' element={<SingleService />} />
+
           <Route path='team' element={<Team />} />
           <Route path='blog' element={<Blog />} />
-          <Route path='contact' element={<Contact />} />
           <Route path='Blog/:BlogId' element={<SingleBlog />} />
+          <Route path='contact' element={<Contact />} />
 
         </Route>
       </Routes>
