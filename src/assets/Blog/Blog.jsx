@@ -3,6 +3,7 @@ import jsonData5 from "./Blog.json"
 import { Container, Row, Col } from "react-bootstrap"
 import BlogsTitle from "./BlogTitle"
 import BlogPagination from "./BlogPagination"
+import { Link } from "react-router-dom"
 
 const Blog = () => {
     return (
@@ -26,7 +27,7 @@ const Blog = () => {
                                         <p className="post-category">{blog.category}</p>
 
                                         <h2 className="title">
-                                            <a href="blog-details.html">{blog.title}</a>
+                                            <Link to={`/Blog/${blog.id}`}>{blog.title}</Link>
                                         </h2>
 
                                         <div className="d-flex align-items-center">
