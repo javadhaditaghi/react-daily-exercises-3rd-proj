@@ -54,7 +54,7 @@ const Hero = () => {
                 </Container>
             </section>
 
-            <section id="blog" className="blog">
+            <section id="blog" className={filteredBlogs().length == 0 ? "d-none" : "d-block blog"}>
 
                 <Container data-aos="fade-up" data-aos-delay="100">
 
